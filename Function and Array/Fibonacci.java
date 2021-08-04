@@ -18,3 +18,21 @@
 // 6
 // Sample Output 2:
 // 8
+import java.util.*;
+class fibonacci{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int a=0;
+        int b=1;
+        int c=0;
+        while(n>0){
+            c=a+b;
+            a=b;
+            b=c;
+            n--;
+        }
+
+    System.out.println(a);
+    }
+}
