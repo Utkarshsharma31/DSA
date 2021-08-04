@@ -16,3 +16,20 @@ Sample Input 2 :
 Sample Output 2 :
 5 11 14 17
 **/
+
+import java.util.*;
+class AP{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int n= sc.nextInt();
+        int count =1;
+        int current=1;
+        while(count<=n){
+            if((3*current+2)%4!=0){
+                System.out.print(3*current+2 +" ");
+                count++;
+            }
+            current++;
+        }
+    }
+}
